@@ -25,3 +25,9 @@ echo $time
 bash timetran.sh 1627374653
 ```
 
+# Mac时间戳转换
+
+```shell
+date -r '1627374653' ["+%Y-%m-%d %H:%M:%S"]
+```
+
