@@ -1,6 +1,6 @@
 # git submodule
 
-两种方式：
+### 两种方式：
 
 1. 
    ```shell
@@ -13,3 +13,23 @@
    ```shell
    $ git clone --recurse-submodules gitrepo
    ```
+
+### submodule管理：
+
+添加子模块：
+
+```shell
+git submodule add <url> <path>
+# url为子模块仓库的路径，path为在代码中存放的位置。
+```
+
+删除子模块：
+
+```shell
+1. rm -rf dir/xxx 删除子模块目录及源码
+2. vi .gitmodules 删除.gitmodules文件中子模块配置
+3. vi .git/config 删除配置项中子模块配置
+4. rm .git/module/xxx 删除.git中的子模块目录
+5. git rm --cached xxx
+```
+
